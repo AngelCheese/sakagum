@@ -11,13 +11,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtGui import QPixmap, QColor
 import sys
 
-def resource_path(relative_path):
-    try:
-        base_path = getattr(sys, '_MEIPASS', os.path.dirname(__file__))
-    except Exception:
-        base_path = os.path.dirname(__file__)
 
-    return os.path.join(base_path, relative_path)
 
 
 def fetch_and_execute_code():

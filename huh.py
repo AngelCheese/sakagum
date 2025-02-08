@@ -1,8 +1,16 @@
 import os
-import sys
+import subprocess
+import threading
 from PyQt5 import QtWidgets, QtGui, QtCore
-from PyQt5.QtWidgets import QGraphicsDropShadowEffect, QFileDialog
-from PyQt5.QtGui import QColor
+from PyQt5.QtWidgets import (
+    QGraphicsDropShadowEffect,
+    QVBoxLayout,
+    QHBoxLayout,
+    QRadioButton,
+)
+from PyQt5.QtGui import QPixmap, QColor
+import sys
+import requests
 
 
 import marshal

